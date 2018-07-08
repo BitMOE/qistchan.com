@@ -1,0 +1,284 @@
+/*
+    BITMOE™ Alanine - another open sourece simple comments system.
+    BSD License.
+    2016 - 2017 (c) Bitmoe Inc.
+*/
+
+@media screen and (min-width:1024px){
+    .alanine-main {
+        padding: 20px;
+    }
+    .alanine-avatar {
+        font-size: 1.2rem;
+        height: 3.4rem;
+        width: 3.4rem;
+    }
+    .alanine-sub-comments{
+        margin-left: 50px;
+    }
+    .alanine-form-input-singleline {
+        display: inline;
+        width: 25%;
+    }
+    .alanine-submit-btn{
+        display: inline;
+        height: 34px;
+        width: calc(25% - 18px);
+    }
+}
+
+@media screen and (max-width:1024px){
+    .alanine-main {
+        padding: 5px;
+    }
+    .alanine-label.alanine-label-ua {
+        display: none;
+    }
+    .alanine-avatar {
+        font-size: 1rem;
+        height: 2.4rem;
+        width: 2.4rem;
+    }
+    .alanine-sub-comments{
+        margin-left: 25px;
+    }
+    .alanine-form-input-singleline {
+        width: 100%;
+    }
+    .alanine-submit-btn{
+        display: inline;
+        height: 34px;
+        width: 100%;
+    }
+}
+
+
+.alanine-main {
+    line-height: 1.2;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    color: #50596c;
+    font-family: -apple-system, "Microsoft YaHei", system-ui, BlinkMacSystemFont, sans-serif;
+}
+
+.alanine-count{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.alanine-form-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #fff;
+    background-image: none;
+    border: 1px solid #c4c9d3;
+    border-radius: .2rem;
+    color: #50596c;
+    font-size: 14px;
+    line-height: 1rem;
+    max-width: 100%;
+    outline: none;
+    position: relative;
+    transition: all .2s ease;
+    font-family: -apple-system, "Microsoft YaHei", system-ui, BlinkMacSystemFont, sans-serif;
+    margin-bottom: 10px;
+    padding: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.alanine-form {
+    text-align: justify;
+}
+
+.alanine-form-input-singleline {
+    height: 36px;
+
+
+}
+
+.alanine-form-input-muiltline {
+    height: 100px;
+    width: 100%;
+
+}
+.alanine-form-input:focus {
+    border-color: #5764c6;
+    box-shadow: 0 0 0 .2rem rgba(87, 100, 198, .15);
+}
+
+.alanine-btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: .1rem solid #5764c6;
+    border-radius: .2rem;
+    color: #5764c6;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    outline: none;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.alanine-btn:focus {
+    background: #fbfbfe;
+    box-shadow: 0 0 0 .2rem rgba(87, 100, 198, .15);
+    text-decoration: none;
+}
+.alanine-btn:hover {
+    background: #5764c6;
+    border-color: #4c59c2;
+    color: #fff;
+    text-decoration: none;
+}
+.alanine-btn:active,
+.alanine-btn.active {
+    background: #4c59c2;
+    border-color: #3e4cb6;
+    color: #fff;
+    text-decoration: none;
+}
+.alanine-btn[disabled],
+.alanine-btn:disabled,
+.alanine-btn.disabled {
+    cursor: default;
+    opacity: .5;
+    pointer-events: none;
+}
+.alanine-btn.btn-primary {
+    background: #5764c6;
+    border-color: #4c59c2;
+    color: #fff;
+}
+.alanine-btn.btn-primary:focus,
+.alanine-btn.btn-primary:hover {
+    background: #4452c0;
+    border-color: #3e4cb6;
+    color: #fff;
+}
+.alanine-btn.btn-primary:active,
+.alanine-btn.btn-primary.active {
+    background: #3f4eba;
+    border-color: #3b49af;
+    color: #fff;
+}
+
+
+
+
+
+.alanine-comments {
+    -webkit-align-content: space-between;
+    align-content: space-between;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -ms-flex-align: start;
+    -ms-flex-line-pack: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.alanine-comments .alanine-comments-icon,
+.alanine-comments .alanine-comments-action {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+.alanine-comments .alanine-comments-content {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+.alanine-comments .alanine-comments-content:not(:first-child) {
+    padding-left: 1rem;
+}
+.alanine-comments .alanine-comments-content:not(:last-child) {
+    padding-right: 1rem;
+}
+.alanine-comments .alanine-comments-userinfo {
+}
+.alanine-comments .alanine-comments-text {
+    margin-top: 10px;
+    color: #bbc1cd;
+}
+.alanine-comments.alanine-comments-centered {
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+}
+.alanine-comments.alanine-comments-centered .alanine-comments-content {
+    overflow: hidden;
+}
+.alanine-comments.alanine-comments-centered .alanine-comments-title,
+.alanine-comments.alanine-comments-centered .alanine-comments-text {
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.alanine-avatar {
+    background: #5764c6;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, .85);
+    display: inline-block;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+    vertical-align: middle;
+
+}
+.alanine-avatar img {
+    border-radius: 50%;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+}
+
+.alanine-comments-list{
+    margin-top: 20px;
+}
+
+.alanine-label {
+    font-size: 10px;
+    background: #e7e9ed;
+    border-radius: .2rem;
+    color: #50596c;
+    display: inline-block;
+    line-height: 1;
+    padding: .3rem .4rem;
+    vertical-align: baseline;
+}
+.alanine-label.alanine-label-ua {
+    background: #5764c6;
+    color: #fff;
+}
+
+.alanine-footer{
+    text-align: right;
+    color: #bbc1cd
+}

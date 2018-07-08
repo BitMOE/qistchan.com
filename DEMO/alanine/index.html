@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="alanine.css" />
+    <title>Alanine - Bitmoe Comments DEMO</title>
+</head>
+<body>
+    <div class="alanine-main">
+        <!--评论计数-->
+        <div class="alanine-count">
+            <span id="alanine-comments-count">5</span>
+            <span>条评论</span>
+        </div>
+
+        <!--评论表单-->
+        <form class="alanine-form">
+            <textarea class="alanine-form-input alanine-form-input-muiltline" id="BMComment-context" placeholder="在此输入评论，评论请遵守相关法律法规。" rows="3"></textarea>
+            <input class="alanine-form-input alanine-form-input-singleline" type="text" id="Alanine-user" placeholder="名字" />
+            <input class="alanine-form-input alanine-form-input-singleline" type="text" id="Alaninet-mail" placeholder="E-mail" />
+            <input class="alanine-form-input alanine-form-input-singleline" type="text" id="Alanine-website" placeholder="网站（可选）" />
+            <button class="alanine-btn btn-primary alanine-submit-btn" type="submit">提交</button>
+        </form>
+
+        <!--评论列表-->
+        <div class="alanine-comments-list">
+
+            <div id="alanine-comment-1" class="alanine-comments">
+                <div class="alanine-comments-icon alanine-avatar">
+                    <img src="img/avatar-1.png" />
+                </div>
+                <div class="alanine-comments-content">
+                    <span class="alanine-comments-userinfo">老赛</span>
+                    <span class="alanine-label">2017/07/15 14:00</span>
+                    <span class="alanine-label alanine-label-ua">Safari / MacOS</span>
+                    <p class="alanine-comments-text">看，有只兔子！</p>
+                </div>
+            </div>
+
+            <div id="alanine-comment-2" class="alanine-comments">
+                <div class="alanine-comments-icon alanine-avatar">
+                    <img src="img/avatar-2.png" />
+                </div>
+                <div class="alanine-comments-content">
+                    <span class="alanine-comments-userinfo">老刘</span>
+                    <span class="alanine-label">2017/07/15 14:05</span>
+                    <span class="alanine-label alanine-label-ua">Chrome / Windows 10</span>
+                    <p class="alanine-comments-text">看，老赛身上有只兔子！</p>
+                </div>
+            </div>
+
+
+
+            <div id="alanine-comment-2-1" class="alanine-comments alanine-sub-comments">
+                <div class="alanine-comments-icon alanine-avatar">
+                    <img src="img/avatar-1.png" />
+                </div>
+                <div class="alanine-comments-content">
+                    <span class="alanine-comments-userinfo">老赛</span>
+                    <span class="alanine-label">2017/07/15 14:08</span>
+                    <span class="alanine-label alanine-label-ua">Safari / MacOS</span>
+                    <p class="alanine-comments-text">回复老刘：请不要看我！</p>
+                </div>
+            </div>
+
+            <div id="alanine-comment-2-2" class="alanine-comments alanine-sub-comments">
+                <div class="alanine-comments-icon alanine-avatar">
+                    <img src="img/avatar-2.png" />
+                </div>
+                <div class="alanine-comments-content">
+                    <span class="alanine-comments-userinfo">老刘</span>
+                    <span class="alanine-label">2017/07/15 14:10</span>
+                    <span class="alanine-label alanine-label-ua">Chrome / Windows 10</span>
+                    <p class="alanine-comments-text">回复老赛：好的，我看兔子！</p>
+                </div>
+            </div>
+
+            <form class="alanine-form alanine-sub-comments">
+                <textarea class="alanine-form-input alanine-form-input-muiltline" id="BMComment-context2" placeholder="在此输入评论，评论请遵守相关法律法规。" rows="3"></textarea>
+                <input class="alanine-form-input alanine-form-input-singleline" type="text" id="Alanine-user2" placeholder="名字" />
+                <input class="alanine-form-input alanine-form-input-singleline" type="text" id="Alaninet-mail2" placeholder="E-mail" />
+                <input class="alanine-form-input alanine-form-input-singleline" type="text" id="Alanine-website2" placeholder="网站（可选）" />
+                <button class="alanine-btn btn-primary alanine-submit-btn" type="submit">提交</button>
+            </form>
+
+            <div id="alanine-comment-3" class="alanine-comments">
+                <div class="alanine-comments-icon alanine-avatar">
+                    <img src="img/avatar-3.png" />
+                </div>
+                <div class="alanine-comments-content">
+                    <span class="alanine-comments-userinfo">老七</span>
+                    <span class="alanine-label">2017/07/15 14:15</span>
+                    <span class="alanine-label alanine-label-ua">Internet Explorer 6.0 / Windows XP</span>
+                    <p class="alanine-comments-text">看，老刘在看老赛身上有只兔子！</p>
+                </div>
+            </div>
+
+            <div id="alanine-comment-4" class="alanine-comments">
+                <div class="alanine-comments-icon alanine-avatar">
+                    <img src="img/avatar-4.png" />
+                </div>
+                <div class="alanine-comments-content">
+                    <span class="alanine-comments-userinfo">老叉</span>
+                    <span class="alanine-label">2017/07/15 14:25</span>
+                    <span class="alanine-label alanine-label-ua">Firefox / Windows 10</span>
+                    <p class="alanine-comments-text">看，老七在看老刘在看老赛身上有只兔子！兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子兔子！</p>
+                </div>
+            </div>
+
+            <div id="alanine-comment-5" class="alanine-comments">
+                <div class="alanine-comments-icon alanine-avatar">
+                    <img src="img/avatar-5.png" />
+                </div>
+                <div class="alanine-comments-content">
+                    <span class="alanine-comments-userinfo">老安</span>
+                    <span class="alanine-label">2017/07/15 14:55</span>
+                    <span class="alanine-label alanine-label-ua">Chrome Mobile / Android 7.0</span>
+                    <p class="alanine-comments-text">MDZZ</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--版权信息-->
+
+        <div class="alanine-footer">
+            <span>Powered by BITMOE™ Alanine</span>
+        </div>
+
+    </div>
+</body>
+</html>
